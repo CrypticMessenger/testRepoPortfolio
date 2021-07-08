@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Site</title>
+</head>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+  .title,.contact{
+    font-family: "sofia";
+  }
+  body{
+    font-size: larger;
+    font-family: sofia;
+    background-image: url("Resources/clouds.jpg");
+    background-attachment: fixed;
+  }
+  .title{
+    opacity: 1;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .hobbies{
+    padding: 10px;
+    text-align: center;
+  }
+  .love{
+    background: rgba( 255, 255, 255, 0.40 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.0px );
+    -webkit-backdrop-filter: blur( 4.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-block-start: 2rem;
+    margin-bottom: 2rem;
+    animation-name: moveRight;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    
+  }
+  .hate{
+    background: rgba( 255, 255, 255, 0.40 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.0px );
+    -webkit-backdrop-filter: blur( 4.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-block-start: 2rem;
+    margin-bottom: 2rem;
+    animation-name: moveLeft;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  .contact{
+    border-radius: 10px;
+    padding: 1px;
+    
+  }
+  footer{
+    background: rgba( 255, 255, 255, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20.0px );
+    -webkit-backdrop-filter: blur( 20.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    animation-timing-function: ease;
+    animation-name: moveUp;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+    text-align: center;
+    
+  }
+  @keyframes moveUp{
+      from {
+      transform: translateY(200px);
+    }
+      to {
+      transform: translateY(0px);
+    }
+
+  }
+  h1,h2{
+    text-align: center;
+  }
+  .me{
+    width: 308 px;
+    height: 200px;
+    border-radius: 50%;
+    transition: width 2s, height 2s;
+  }
+  .me:hover{
+    width: 500px;
+    height: 500px;
+  }
+  .social-media{
+    width: 50px;
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow: inset 22px 22px 43px #ffffff,
+    inset -22px -22px 43px #ffffff;
+    transition: width 1s;
+  }
+  .social-media:hover{
+    width: 100px;
+  }
+  .love-desc{
+    padding-top: 20px;
+    margin-left: 5rem;
+  }
+  .hate-desc{
+    margin-left: 5rem;
+  }
+  .love-hobby{
+    width: 250px;
+    padding-left: 10px;
+  }
+  .hate-hobby{
+    width: 250px;
+    padding-left: 10px;
+  }
+  .picture{
+    animation-name: moveRight;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    text-align: center;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  .contact-img{
+    width: 125px;
+  }
+  @keyframes moveRight {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes moveLeft {
+  from {
+    transform: translateX(200px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.logo{
+  width: 150px;
+  border-radius: 15px;
+}
+.motivation{
+  text-align: center;
+}
+.motivation-img{
+  width: 500px;
+  transition: width 2s;
+}
+.motivation-img:hover{
+  width: 50%;
+}
+
+</style>
+
+
+<body>
+  <div class='title'>
+    <img class='logo' src="Resources/logo1.png" alt="my-logo">
+    <h1>MY PORTFOLIO WEBSITE</h1>
+  </div>
+  <div  class="picture">
+    
+    <a href="#" class='blue-container'><img class='me' src="Resources/Me.jpeg" alt="A cute orange cat lying on its back."></a>
+    <p>
+        <strong>ABOUT<br></strong>
+        <strong>Hi!! Meet me...I am Ankit Sharma</strong><br>
+        I am a student UG sophomore of CSE  at IIT Ropar.<br>
+        I love learning about new stuff.I am a very good learner. I recently learnt "Data Analysis by python" and currently learning machine learning.
+        <br><b>'I am an alone introvert kid, who has countless tales and secrets to tell but chose to keep in its work, one way or other. :)'</b>
+    </p>
+  </div>
+
+<main>
+<div class='hobbies'>
+  <div class='love'>
+    <a href="#"><img class='love-hobby' src="Resources/doodle.png" alt="doodle image"></a>
+    <p class='love-desc'><h1>1.Doodling</h1>I love doodling in my free time, it's my way to show what I feel and imagine, on paper. Since childhood I have a whole imaginary world inside me ('paracosm'), it contains snakes, witches, wizards, Sci-fi hybridised animals, celestial beings and what not. I think about being there sometimes, to escape reality of this cruel world.</p>
+  </div>
+  <div class='hate'>
+    <a href="#"><img class='hate-hobby' src="Resources/datascience.png" alt="doodle image"></a>
+    <p class='hate-desc'><h1>2.Data analysis</h1>I recently got to explore data analysis and visualization and god I love doing that, isn't it amazing that we have so much data uploaded in just one second. I think i am a natural in this...lol. recently I took a course on data analysis in free code camp and earned a certificate. though I still need to develop skill of deducing from data analysis.</p>
+  </div>
+  <div class='love'>
+    <a href="#"><img class='love-hobby' src="Resources/Forest 01.jpg" alt="doodle image"></a>
+    <p class='love-desc'><h1>3.Forest Roaming</h1>Forest, Fungi and trees just soothe me. being from a concrete jungle like Kota City, i just love to go to my village in Himachal pardesh, full of beautiful forests, mountains and streams. I specifically wrote 'Fungi' because they are so so diverse and useful to us that we are even still exploring their uses. recently scientists discovered a fungi that can 'eat' radiations.</p>
+  </div>
+  <div class='hate'>
+    <a href="https://www.vecteezy.com/free-vector/background"><img class='hate-hobby' src="Resources/programmer_04__Converted__generated.jpg" alt="doodle image"></a>
+    <p class='hate-desc'><h1>4.Programming</h1>Just like my paracosm, in which i am god of my own world, programming gives us power to create anything you want or need. Starting programming and choosing a language to start with is like choosing a starting pokemon, I chose python though ;) and no regrets, it's just beautiful and powerful. except python I know C,C++, little C#. I am currently exploring front end-web development, game dev and data science. I don't like to do competetive programming much.</p>
+  </div>
+  <div class='love'>
+    <a href="#"><img class='love-hobby' src="Resources/vectorstock_30182597.jpg" alt="doodle image"></a>
+    <p class='love-desc'><h1>5.graphic designing</h1>just like I love doing logical stuff, i love doing creative stuff too. I can design minimalistic, modern logos, I love content writing too, I ocassionally write too. I am just some introvert who just loves to be alone but don't get me wrong , I oddly love to do work in teams.</p>
+  </div>
+</div>
+
+<dir class="motivation">
+  <p> <h1>Awesome Quotes for confidence.</h1>></p>
+  <img class='motivation-img' src="Resources/slide1.png" alt="slide1"> 
+  <img class='motivation-img' src="Resources/slide2.png" alt="slide2">
+
+</dir>
+
+  <footer>
+    <p>created with love and passion<br>-by Ankit Sharma</p>
+    <p></p>
+    <div class='contact'>
+      <a href="#"><img class='contact-img' src="Resources/contact.png" alt="contact"></a>
+      <h3>contact me for general talk about subjects that interests you, Let's get in touch!</h3>
+      <h3>contact me:</h3>
+      <a href="https://www.instagram.com/ankit_sharma.zip/" ><img class='social-media' src="Resources/instagram-logo-png-2428.png" alt="Instagram contact"></a>
+      <br>
+      <a href="https://www.facebook.com/profile.php?id=100057043986329" ><img class='social-media' src="Resources/logo-facebookpng-32202.png" alt="Instagram contact"></a>
+      <br>
+      <a href="https://www.linkedin.com/in/ankit-sharma-1a67931bb?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bej2s6s%2BgSDycN6BKxFaE2g%3D%3D" ><img class='social-media' src="Resources/linkedin-logo-png-1826.png" alt="LinkedIn contact"></a>
+      <div>Icons made by <a href="https://www.flaticon.com/authors/iconixar" title="iconixar">iconixar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+      <a href="https://www.vectorstock.com/royalty-free-vector/abstract-origami-colorful-3d-icon-logo-isolated-vector-30182597">Vector image by VectorStock / Robot</a>
+      <a href="https://www.vecteezy.com/free-vector/background">Background Vectors by Vecteezy</a>
+      <hr>
+      © 2021 Ankit Sharma.
+    </div>
+  </footer>
+</main>
+    
+</body>
+</html>
