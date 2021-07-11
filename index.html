@@ -16,9 +16,10 @@
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
 <style>
   .contact{
-    font-family: "sofia";
+    font-family: 'Nanum Pen Script', cursive;
   }
   body{
     font-size: larger;
@@ -35,13 +36,15 @@
     text-align: center;
     margin-bottom: 15px;
     margin-top: 15px;
-    margin-left: 85px;
-    margin-right: 85px;
+    
   }
   
   .hobbies{
+    background: linear-gradient(215deg,#9df4ff,#d19efa);
     padding: 10px;
     text-align: center;
+    margin: 10px 0px 10px 0px;
+    border-radius: 10px;
   }
   .love{
     background: rgba( 61, 119, 245, 0.40 );
@@ -191,20 +194,65 @@
 .motivation-img:hover{
   width: 50%;
 }
+nav ul {
+  margin: 0px;
+  padding: 5px 0px 5px 30px;
+}
+nav li {
+  display: inline;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+nav li:hover{
+  background-color: #fa8d28;
+}
+#nav-bar{
+  font-family: monospace;
+  font-size:x-large;
+}
+.navigation{
+  background: linear-gradient(35deg,#ffd89d,#dff58f);
+  margin: 10px 0px 10px 0px;
+  border-radius: 10px;
+  text-align: center;
+}
+#contact-me{
+  border-radius: 10px;
+  width: 500px;
+  transition: width 2s, border-radius 2s;
+}
+#contact-me:hover{
+  width: 50%;
+  border-radius: 60%;
+}
 
 </style>
 
 
 <body>
+  
   <div class='title'>
     <h1><strong><u>MY PORTFOLIO WEBSITE</u></strong></h1>
   </div>
-  <div  class="picture">
+  <div class='navigation'>
+    <nav id="nav-bar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#">3AM corner</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  
+  <div  class="picture" id='about'>
+    <br>
+    <h3><b>About me :) </b></h3>
     
     <a href="#" class='blue-container'><img class='me' src="Resources/Me.jpeg" alt="A cute orange cat lying on its back."></a>
     <p>
-        <strong>ABOUT<br></strong>
-        <strong>Hi!! Meet me...I am Ankit Sharma</strong><br>
+        
+        <strong>Hi!!...I am Ankit Sharma</strong><br>
         I am a student UG sophomore of CSE  at IIT Ropar.<br>
         I love learning about new stuff.I am a very good learner. I recently learnt "Data Analysis by python" and currently learning machine learning.
         <br><b>'I am an alone introvert kid, who has countless tales and secrets to tell but chose to keep in its work, one way or other. :)'</b>
@@ -213,6 +261,7 @@
 
 <main>
 <div class='hobbies'>
+  <h1>What I love to do!!</h1>
   <div class='love'>
     <a href="#"><img class='love-hobby' src="Resources/doodle.png" alt="doodle image"></a>
     <p class='love-desc'><h1>1.Doodling</h1>I love doodling in my free time, it's my way to show what I feel and imagine, on paper. Since childhood I have a whole imaginary world inside me ('paracosm'), it contains snakes, witches, wizards, Sci-fi hybridised animals, celestial beings and what not. I think about being there sometimes, to escape reality of this cruel world.</p>
@@ -241,18 +290,16 @@
   </div>
 </div>
 
-<dir class="motivation">
+<div class="motivation">
   <p> <h1>Awesome Quotes for confidence.</h1>></p>
   <img class='motivation-img' src="Resources/slide1.png" alt="slide1"> 
   <img class='motivation-img' src="Resources/slide2.png" alt="slide2">
-
-</dir>
+</div>
 
   <footer>
     <p>created with love and passion<br>-by Ankit Sharma</p>
-    <p><br>Special Thanks to FreeCodeCamp.</p>
-    <div class='contact'>
-      <a href="#"><img class='contact-img' src="Resources/contact.png" alt="contact"></a>
+    <div class='contact' id='contact'>
+      <img id='contact-me' src="Resources/everything.png" alt="contact me">
       <h3>contact me for general talk about subjects that interests you, Let's get in touch!</h3>
       <h3>contact me:</h3>
       <a href="https://www.instagram.com/ankit_sharma.zip/" ><img class='social-media' src="Resources/instagram-logo-png-2428.png" alt="Instagram contact"></a>
