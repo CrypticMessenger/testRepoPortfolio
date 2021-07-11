@@ -38,20 +38,29 @@
   }
   #head{
 
-    width: 100%;
+    width: 80%;
     height: auto;
-    
+
   }
   
   .hobbies{
     background: linear-gradient(215deg,#9df4ff,#d19efa);
     padding: 10px;
+    font-family: 'Nanum Pen Script';
+    font-size:x-large;
+    color: rgb(255, 255, 255);
     text-align: center;
     margin: 10px 0px 10px 0px;
     border-radius: 10px;
   }
-  .love{
+  .column1 ,.column2{
+  display: table;
+  width: 100%;
+  }
+
+  .doodling{
     background: rgba( 61, 119, 245, 0.40 );
+    background-image: url('Resources/doodling.png');
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4.0px );
     -webkit-backdrop-filter: blur( 4.0px );
@@ -61,11 +70,75 @@
     margin-bottom: 2rem;
     animation-name: moveRight;
     animation-duration: 2s;
-    animation-fill-mode: forwards;
-    
+    animation-fill-mode: forwards;  
+    display: table-cell;
+    padding: 16px;
   }
-  .hate{
+  .forest{
+    background: rgba( 61, 119, 245, 0.40 );
+    background-image: url('Resources/forest.png');
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.0px );
+    -webkit-backdrop-filter: blur( 4.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-block-start: 2rem;
+    margin-bottom: 2rem;
+    animation-name: moveRight;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;  
+  }
+  .graphic-designing{
+    background: rgba( 61, 119, 245, 0.40 );
+    background-image: url('Resources/graphicdesigning.png');
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.0px );
+    -webkit-backdrop-filter: blur( 4.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-block-start: 2rem;
+    margin-bottom: 2rem;
+    animation-name: moveRight;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;  
+    display: table-cell;
+    padding: 16px;
+  }
+  .data-analysis{
     background: rgba( 68, 197, 252, 0.40 );
+    background-image: url('Resources/dataanalysis.png');
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.0px );
+    -webkit-backdrop-filter: blur( 4.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-block-start: 2rem;
+    margin-bottom: 2rem;
+    animation-name: moveLeft;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    display: table-cell;
+    padding: 16px;
+  }
+  .programming{
+    background: rgba( 68, 197, 252, 0.40 );
+    background-image: url('Resources/programming.png');
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.0px );
+    -webkit-backdrop-filter: blur( 4.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-block-start: 2rem;
+    margin-bottom: 2rem;
+    animation-name: moveLeft;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    display: table-cell;
+    padding: 16px;
+  }
+  .animation{
+    background: rgba( 68, 197, 252, 0.40 );
+    background-image: url('Resources/animation.png');
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4.0px );
     -webkit-backdrop-filter: blur( 4.0px );
@@ -77,6 +150,9 @@
     animation-duration: 2s;
     animation-fill-mode: forwards;
   }
+
+
+
   .contact{
     border-radius: 10px;
     padding: 1px;
@@ -230,6 +306,9 @@ nav li:hover{
   border-radius: 60%;
 }
 
+
+
+
 </style>
 
 
@@ -264,40 +343,42 @@ nav li:hover{
 
 <main>
 <div class='hobbies'>
-  <h1>What I love to do!!</h1>
-  <div class='love'>
-    <a href="#"><img class='love-hobby' src="Resources/doodle.png" alt="doodle image"></a>
-    <p class='love-desc'><h1>1.Doodling</h1>I love doodling in my free time, it's my way to show what I feel and imagine, on paper. Since childhood I have a whole imaginary world inside me ('paracosm'), it contains snakes, witches, wizards, Sci-fi hybridised animals, celestial beings and what not. I think about being there sometimes, to escape reality of this cruel world.</p>
+  <h1 style="color: black;">What I love to do!!</h1>
+
+  <div class="column1">
+    <div class='doodling'>
+      <p class='love-desc'><h1 style="color: #f9fd07;">1.Doodling</h1>I love doodling in my free time, it's my way to show what I feel and imagine, on paper. Since childhood I have a whole imaginary world inside me ('paracosm'), it contains snakes, witches, wizards, Sci-fi hybridised animals, celestial beings and what not. I think about being there sometimes, to escape reality of this cruel world.</p>
+    </div>
+
+    <div class='data-analysis'>
+      <p class='hate-desc'><h1 style="color: #d19efa;">2.Data analysis</h1>I recently got to explore data analysis and visualization and god I love doing that, isn't it amazing that we have so much data uploaded in just one second. I think i am a natural in this...lol. recently I took a course on data analysis in free code camp and earned a certificate. though I still need to develop skill of deducing from data analysis.</p>
+    </div>
   </div>
-  <div class='hate'>
-    <a href="#"><img class='hate-hobby' src="Resources/datascience.png" alt="doodle image"></a>
-    <p class='hate-desc'><h1>2.Data analysis</h1>I recently got to explore data analysis and visualization and god I love doing that, isn't it amazing that we have so much data uploaded in just one second. I think i am a natural in this...lol. recently I took a course on data analysis in free code camp and earned a certificate. though I still need to develop skill of deducing from data analysis.</p>
+  
+    <div class='forest'>
+      <p class='love-desc'><h1 style="color: #09ff00;">3.Forest Roaming</h1>Forest, Fungi and trees just soothe me. being from a concrete jungle like Kota City, i just love to go to my village in Himachal pardesh, full of beautiful forests, mountains and streams. I specifically wrote 'Fungi' because they are so so diverse and useful to us that we are even still exploring their uses. recently scientists discovered a fungi that can 'eat' radiations.</p>
+    </div>
+
+  <div class='column2'>
+    <div class='programming'>
+      <p class='hate-desc'><h1 style="color: #41effc;">4.Programming</h1>Just like my paracosm, in which i am god of my own world, programming gives us power to create anything you want or need. Starting programming and choosing a language to start with is like choosing a starting pokemon, I chose python though ;) and no regrets, it's just beautiful and powerful. except python I know C,C++, little C#. I am currently exploring front end-web development, game dev and data science. I don't like to do competetive programming much.</p>
+    </div>
+    <div class='graphic-designing'>
+      <p class='love-desc'><h1 style="color: rgb(255, 53, 238);">5.graphic designing</h1>just like I love doing logical stuff, i love doing creative stuff too. I can design minimalistic, modern logos, I love content writing too, I ocassionally write too. I am just some introvert who just loves to be alone but don't get me wrong , I oddly love to do work in teams.</p>
+    </div>
   </div>
-  <div class='love'>
-    <a href="#"><img class='love-hobby' src="Resources/Forest 01.jpg" alt="doodle image"></a>
-    <p class='love-desc'><h1>3.Forest Roaming</h1>Forest, Fungi and trees just soothe me. being from a concrete jungle like Kota City, i just love to go to my village in Himachal pardesh, full of beautiful forests, mountains and streams. I specifically wrote 'Fungi' because they are so so diverse and useful to us that we are even still exploring their uses. recently scientists discovered a fungi that can 'eat' radiations.</p>
-  </div>
-  <div class='hate'>
-    <a href="https://www.vecteezy.com/free-vector/background"><img class='hate-hobby' src="Resources/programmer_04__Converted__generated.jpg" alt="doodle image"></a>
-    <p class='hate-desc'><h1>4.Programming</h1>Just like my paracosm, in which i am god of my own world, programming gives us power to create anything you want or need. Starting programming and choosing a language to start with is like choosing a starting pokemon, I chose python though ;) and no regrets, it's just beautiful and powerful. except python I know C,C++, little C#. I am currently exploring front end-web development, game dev and data science. I don't like to do competetive programming much.</p>
-  </div>
-  <div class='love'>
-    <a href="#"><img class='love-hobby' src="Resources/vectorstock_30182597.jpg" alt="doodle image"></a>
-    <p class='love-desc'><h1>5.graphic designing</h1>just like I love doing logical stuff, i love doing creative stuff too. I can design minimalistic, modern logos, I love content writing too, I ocassionally write too. I am just some introvert who just loves to be alone but don't get me wrong , I oddly love to do work in teams.</p>
-  </div>
-   <div class='hate'>
-    <a href="#"><video width="50%" height="50%" autoplay loop>
-      <source src="Resources/tessaract.mp4" type="video/mp4">
-    </video></a>
-    <p class='hate-desc'><h1>6.Animation and blender</h1>I love animation and am currently learning blender to make awesome textures and animations. This animation is the first animation that i made using blender and i loved it, it's such a powerful tool. :) absolutely love it </p>
-  </div>
+
+
+    <div class='animation'>
+      <a href="#"><video width="50%" height="50%" autoplay loop>
+        <source src="Resources/tessaract.mp4" type="video/mp4">
+      </video></a>
+      <p class='hate-desc'><h1>6.Animation and blender</h1>I love animation and am currently learning blender to make awesome textures and animations. This animation is the first animation that i made using blender and i loved it, it's such a powerful tool. :) absolutely love it </p>
+    </div>
+
+
 </div>
 
-<div class="motivation">
-  <p> <h1>Awesome Quotes for confidence.</h1>></p>
-  <img class='motivation-img' src="Resources/slide1.png" alt="slide1"> 
-  <img class='motivation-img' src="Resources/slide2.png" alt="slide2">
-</div>
 
   <footer>
     <p>created with love and passion<br>-by Ankit Sharma</p>
