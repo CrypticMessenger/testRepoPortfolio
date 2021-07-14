@@ -52,9 +52,11 @@
     text-align: center;
     margin: 10px 0px 10px 0px;
     border-radius: 10px;
+    
   }
   .column1 ,.column2{
   display: flex;
+  justify-content:flex-start;  
   
   }
 
@@ -72,6 +74,7 @@
     animation-duration: 2s;
     animation-fill-mode: forwards;  
     padding: 16px;
+    width: 50%;
   }
   .forest{
     background: rgba( 61, 119, 245, 0.40 );
@@ -98,10 +101,11 @@
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     margin-block-start: 2rem;
     margin-bottom: 2rem;
-    animation-name: moveRight;
+    animation-name: moveLeft;
     animation-duration: 2s;
     animation-fill-mode: forwards;  
     padding: 16px;
+    width:50%;
   }
   .data-analysis{
     background: rgba( 68, 197, 252, 0.40 );
@@ -117,6 +121,7 @@
     animation-duration: 2s;
     animation-fill-mode: forwards;
     padding: 16px;
+    width:50%;
   }
   .programming{
     background: rgba( 68, 197, 252, 0.40 );
@@ -128,10 +133,11 @@
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     margin-block-start: 2rem;
     margin-bottom: 2rem;
-    animation-name: moveLeft;
+    animation-name: moveRight;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     padding: 16px;
+    width:50%;
   }
   .animation{
     background: rgba( 68, 197, 252, 0.40 );
@@ -300,16 +306,16 @@ nav li:hover{
 }
 #contact-me{
   border-radius: 10px;
-  width: 500px;
-  transition: width 2s, border-radius 2s;
+  width: 25%;
+  height:auto;
+  transition: width 4s, border-radius 4s;
 }
 #contact-me:hover{
-  width: 50%;
-  border-radius: 60%;
+  width: 75%;
+  border-radius: 50%;
 }
 .videos{
-  display: flex;
-  
+  display: flex; 
 }
 
 
