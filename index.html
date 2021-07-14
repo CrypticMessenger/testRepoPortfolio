@@ -54,8 +54,8 @@
     border-radius: 10px;
   }
   .column1 ,.column2{
-  display: table;
-  width: 100%;
+  display: flex;
+  
   }
 
   .doodling{
@@ -71,7 +71,6 @@
     animation-name: moveRight;
     animation-duration: 2s;
     animation-fill-mode: forwards;  
-    display: table-cell;
     padding: 16px;
   }
   .forest{
@@ -87,6 +86,7 @@
     animation-name: moveRight;
     animation-duration: 2s;
     animation-fill-mode: forwards;  
+    padding: 16px;
   }
   .graphic-designing{
     background: rgba( 61, 119, 245, 0.40 );
@@ -101,7 +101,6 @@
     animation-name: moveRight;
     animation-duration: 2s;
     animation-fill-mode: forwards;  
-    display: table-cell;
     padding: 16px;
   }
   .data-analysis{
@@ -117,7 +116,6 @@
     animation-name: moveLeft;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    display: table-cell;
     padding: 16px;
   }
   .programming{
@@ -133,7 +131,6 @@
     animation-name: moveLeft;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    display: table-cell;
     padding: 16px;
   }
   .animation{
@@ -149,8 +146,13 @@
     animation-name: moveLeft;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+    padding: 16px;
   }
-
+  video{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
 
 
   .contact{
